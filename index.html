@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CookPal</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    
+    <nav id="navbar">
+      <div id="logo">
+        <img src="assets/Cookpal 1.svg" alt="CookPal Logo" />
+      </div>
+
+      <div id="nav-items">
+        <ul id="listitems">
+          <li><a href="#home" class="navlink">Home</a></li>
+          <li><a href="#explore" class="navlink">Explore</a></li>
+          <li><a href="#help" class="navlink">Help</a></li>
+        </ul>
+
+        <img src="assets/Profile.svg" alt="profile_logo" />
+      </div>
+    </nav>
+
+    <div id="headerimage">
+      <div id="text1">
+        <h3 style="color: #dc582a; font-weight: 500px; size: 24px">
+          Trending now
+        </h3>
+        <h1 style="color: white">
+          Mike's famous salad <br />
+          with cheese
+        </h1>
+        <h5 style="color: white">By John Mike</h5>
+      </div>
+    </div>
+
+    <div id="searchbar">
+      <h2>Search For Recipes</h2>
+      <div>
+        <form action="" id="searchrecipe">
+          <input type="text" name="Search" placeholder="Search For Recipe..." />
+          <button class="material-icons">search</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="buttons">
+      <button id="btn1">
+        <p>All Recipes</p>
+        <span class="material-icons">chevron_right</span>
+      </button>
+      <button id="btn2">
+        <p>Veg Recipes Only</p>
+        <span class="material-icons">chevron_right</span>
+      </button>
+      <button id="btn3">
+        <p>Non Veg Recipes</p>
+        <span class="material-icons">chevron_right</span>
+      </button>
+    </div>
+
+    <div id="filter_And_Menu">
+      <div id="filter">
+        <h2>Filters</h2>
+
+        <div id="rating">
+          <h3>Rating</h3>
+
+          <div id="filterInputs">
+            <div>
+              <input type="radio" id="above4" name="filter" />
+              <label for="above4">4 and Above</label>
+            </div>
+
+            <div>
+              <input type="radio" id="below4" name="filter" />
+              <label for="below4">Below 4</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="menu"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
